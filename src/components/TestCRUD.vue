@@ -9,7 +9,7 @@
       <v-toolbar
         flat
       >
-        <v-toolbar-title>Quadro de Eventos</v-toolbar-title>
+        <v-toolbar-title>Quadro de Tarefas</v-toolbar-title>
         <v-divider
           class="mx-4"
           inset
@@ -22,13 +22,13 @@
         >
           <template v-slot:activator="{ on, attrs }">
             <v-btn
-              color="primary"
+              color="grey-darken"
               dark
               class="mb-2"
               v-bind="attrs"
               v-on="on"
             >
-              Novo Evento
+              Nova Tarefa
             </v-btn>
           </template>
           <v-card>
@@ -93,14 +93,14 @@
             <v-card-actions>
               <v-spacer></v-spacer>
               <v-btn
-                color="blue darken-1"
+                color="dark"
                 text
                 @click="close"
               >
                 Cancel
               </v-btn>
               <v-btn
-                color="blue darken-1"
+                color="dark"
                 text
                 @click="save"
               >
@@ -139,7 +139,7 @@
     </template>
     <template v-slot:no-data>
       <v-btn
-        color="primary"
+        color="dark"
         @click="initialize"
       >
         Resetar
